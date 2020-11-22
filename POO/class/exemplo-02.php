@@ -16,7 +16,7 @@ class Carro {
         $this->modelo = $modelo;
     }
 
-    public function getMotor(){
+    public function getMotor():float{
 
         return $this->motor;
     }
@@ -27,7 +27,7 @@ class Carro {
 
     }
 
-    public function getAno(){
+    public function getAno():int{ 
 
         return $this->ano;
     }
@@ -53,6 +53,6 @@ $gol->setModelo("Gol GT");
 $gol->setMotor("1.6");
 $gol->setAno("2017");
  
-print_r($gol->exibir());
+var_dump($gol->exibir());
 
 ?>
