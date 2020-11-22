@@ -27,7 +27,7 @@ class Carro {
 
     }
 
-    public function getAno():int{ 
+    public function getAno():int{
 
         return $this->ano;
     }
