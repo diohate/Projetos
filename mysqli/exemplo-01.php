@@ -7,7 +7,7 @@
     echo "Error: " . $conn->connect_error;
  }
 
-$stmt = $conn->prepare("INSERT INTO tb_usuarios (deslogin, desssenha) VALUES(?, ?)");
+$stmt = $conn->prepare("INSERT INTO tb_usuarios (deslogin, dessenha) VALUES(?, ?)");
 
 $stmt->bind_param("ss", $login, $pass);
 
