@@ -6,11 +6,20 @@ $usuario = new usuario();
 
 $usuario->loadById(7);
 
-$usuario->update("professor", "!@#$%¨&");
+$usuario->delete();
 
 echo $usuario;
 
 /*
+usuario = new usuario();
+
+$usuario->loadById(7);
+
+$usuario->update("professor", "!@#$%¨&");
+
+echo $usuario;
+
+
 //Echo $usuario
 
 $aluno = new usuario("aluno", "@lun0");
