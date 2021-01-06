@@ -2,10 +2,17 @@
 
 require_once("config.php");
 
-$sql = new Sql();
+//Faz o Select de ususario por ID
 
-$usuarios = $sql->select("SELECT * FROM tb_usuarios");
+$diogo = new usuario();
 
-echo json_encode($usuarios);
+$diogo->loadById(3);
+
+echo $diogo;
+
+//Faz o Select print em json
+//$sql = new Sql();
+//$usuarios = $sql->select("SELECT * FROM tb_usuarios");
+//echo json_encode($usuarios);
 
 ?>
