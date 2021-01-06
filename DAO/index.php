@@ -2,13 +2,27 @@
 
 require_once("config.php");
 
-//Faz o Select de ususario por ID
+//Carrega um usuário usando o login e a senha
 
-$diogo = new usuario();
+$usuario = new usuario();
 
-$diogo->loadById(3);
+$usuario->login("root","!@#$");
 
-echo $diogo;
+echo $usuario;
+
+
+//Carrega uma lista de usuários buscando pelo login
+//$search = usuario::serach("di");
+//echo json_encode($search);
+
+//Carrega uam lista de usuários
+//$lista = usuario::getList();
+//echo json_encode($lista);
+
+//Faz o Select de usuario por ID
+//$diogo = new usuario();
+//$diogo->loadById(3);
+//echo $diogo;
 
 //Faz o Select print em json
 //$sql = new Sql();
